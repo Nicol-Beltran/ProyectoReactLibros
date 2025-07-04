@@ -1,0 +1,44 @@
+[
+     {
+    "titulo": "1984",
+    "autor": "George Orwell",
+    "imagen": "1984.jpg",
+    "wiki":"https://es.wikipedia.org/wiki/1984_(novela)",
+    "generos": ["Distopía", "Ciencia ficción"]
+  },
+  {
+    "titulo": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "imagen": "cienaños.jpg",
+    "wiki":"https://es.wikipedia.org/wiki/Cien_a%C3%B1os_de_soledad",
+    "generos": ["Realismo mágico", "Literatura latinoamericana"]
+  },
+  {
+    "titulo":"El principito ",
+    "autor":"Antoine de Saint-Exupéry",
+    "imagen":"principito.jpg",
+    "wiki":"https://es.wikipedia.org/wiki/El_principito",
+    "generos":[]
+  },
+  {
+    "titulo":"Don Quijote de la Mancha",
+    "autor":"Miguel de Cervantes",
+    "imagen":"donquijote.jpg",
+    "wiki":"https://es.wikipedia.org/wiki/Don_Quijote_de_la_Mancha",
+    "generos":[]
+  },
+  {
+    "titulo":"El diario de Ana Frank",
+    "autor":"Ana Frank",
+    "imagen":"anafrank.jpg",
+    "wiki":"https://es.wikipedia.org/wiki/Diario_de_Ana_Frank",
+    "generos":[]
+  },
+  {
+    "titulo":"El Alquimista",
+    "autor":"Paulo Coelho",
+    "imagen":"alquimista.jpg",
+    "generos":[],
+    "wiki":"https://es.wikipedia.org/wiki/El_alquimista_(novela)"
+  }
+]
