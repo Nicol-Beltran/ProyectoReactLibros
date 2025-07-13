@@ -1,24 +1,57 @@
-
 function LibroCard({ libro }) {
-    return (
-        <>
-        <div class="mx-auto" style={{width :"300px"}}>
-            <div class="card p-2  bg-dark" style={{ }}>
-                <img src={`./src/assets/${libro.imagen}`} class="card-img-top" alt={`imagen de ${libro.titulo} `}/>
-                <div class="card-body">
-                    <h5 class="card-title text-warning">{libro.titulo}</h5>
-                    {/* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p> */}
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><b>Autor</b> {libro.autor}</li>
-                    <li class="list-group-item"><b>Genero</b> {libro.genero}</li>
-                </ul>
-                <a href={libro.wiki}  target="_blank" class="btn btn-primary">Detalles</a>
-            </div>
-        </div>
-        </>
-    )
+  return (
+    <>
+      <div className="col-md-4 col-sm-6 col-12 mb-4">
+        <div className="card h-100 bg-dark">
+          <img
+            src={`./src/assets/${libro.imagen}`}
+            className="card-img-top"
+            alt={`imagen de ${libro.titulo}`}
+            style={{
+              height: "300px",
+              objectFit: "cover",
+            }}
+          />
+          <div className="card-body d-flex flex-column">
+            <h5 className="card-title text-warning">{libro.titulo}</h5>
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item bg-dark text-light">
+              <b>Autor:</b> {libro.autor}
+            </li>
+            <li className="list-group-item bg-dark text-light">
+              {/* Mostrar elementos de array */}
+              {/* <b>Género(s):</b> {libro.generos.join(", ")} */}
 
+              <b>Generos:</b>
+              <div className="mb-3">
+                {libro.generos.map(
+                  (
+                    genero,
+                    index // ← Usando prop libro.generos
+                  ) => (
+                    <span key={index} className="badge bg-secondary me-1 mb-1">
+                      {genero}
+                    </span>
+                  )
+                )}
+              </div>
+            </li>
+          </ul>
+          <div className="card-body">
+            <a
+              href={libro.wiki}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary w-100"
+            >
+              Detalles
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default LibroCard
+export default LibroCard;
